@@ -39,7 +39,7 @@ return (
   </div>
 
   <div className="flex flex-col">
-    <h3 className="font-bold text-lg text-center">Women's Clothing</h3>
+    <h3 className="font-bold text-lg text-center">Women&apos;s Clothing</h3>
    <div className='flex flex-row flex-wrap justify-center'>
     {data.map(product => {
     if(product.category==="women's clothing") {
@@ -61,7 +61,7 @@ return (
   </div>
 
   <div className="flex flex-col">
-    <h3 className="font-bold text-lg text-center">Men's Clothing</h3>
+    <h3 className="font-bold text-lg text-center">Men&apos;s Clothing</h3>
    <div className='flex flex-row flex-wrap justify-center'>
     {data.map(product => {
     if(product.category==="men's clothing") {
