@@ -33,7 +33,7 @@ const Search = () => {
        <div className='flex flex-row flex-wrap justify-center px-4 py-10'>
        {data ? data.map(product => {
         if(product.title.toLowerCase().includes(query.toLowerCase()))
-        return <ProductCard img={product.image} title={product.title} price={product.price} id={product.id} />
+        return <ProductCard key={product.id} img={product.image} title={product.title} price={product.price} id={product.id} />
        }
     ) :
           <div className=''>

@@ -32,7 +32,7 @@ return (
    <div className='flex flex-row flex-wrap justify-center'>
     {data.map(product => {
     if(product.category==="electronics") {
-      return <ProductCard img={product.image} title={product.title} price={product.price} id={product.id} />
+      return <ProductCard key={product.id} img={product.image} title={product.title} price={product.price} id={product.id} />
     }})
   }
       </div>
