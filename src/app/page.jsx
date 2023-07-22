@@ -43,7 +43,7 @@ return (
    <div className='flex flex-row flex-wrap justify-center'>
     {data.map(product => {
     if(product.category==="women's clothing") {
-      return <ProductCard img={product.image} title={product.title} price={product.price} id={product.id} />
+      return <ProductCard key={product.id} img={product.image} title={product.title} price={product.price} id={product.id} />
     }})
   }
       </div>
@@ -54,7 +54,7 @@ return (
    <div className='flex flex-row flex-wrap justify-center'>
     {data.map(product => {
     if(product.category==="jewelery") {
-      return <ProductCard img={product.image} title={product.title} price={product.price} id={product.id} />
+      return <ProductCard key={product.id} img={product.image} title={product.title} price={product.price} id={product.id} />
     }})
   }
       </div>
@@ -65,7 +65,7 @@ return (
    <div className='flex flex-row flex-wrap justify-center'>
     {data.map(product => {
     if(product.category==="men's clothing") {
-      return <ProductCard img={product.image} title={product.title} price={product.price} id={product.id} />
+      return <ProductCard key={product.id} img={product.image} title={product.title} price={product.price} id={product.id} />
     }})
   }
       </div>
